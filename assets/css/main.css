@@ -153,7 +153,10 @@ input, select, textarea {
 
 	h3 {
 		font-size: 1.75em;
-		line-height: 1.5em;
+		line-height: 1.5em;		
+		display: flex;
+		justify-content: center;
+		align-items: center;		
 	}
 
 	h4 {
@@ -191,6 +194,9 @@ input, select, textarea {
 
 		hr.major {
 			margin: 3.375em 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 
 	blockquote {
@@ -1787,6 +1793,9 @@ input, select, textarea {
 	header.major h2 {
 		color: #286b59;
 		font-size: 3.5em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 		header.major h2 + p {
@@ -1794,7 +1803,13 @@ input, select, textarea {
 			font-size: 1.75em;
 			font-weight: 700;
 			margin-top: -0.75em;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
 		}
+
+	
 
 /* Form */
 
@@ -2053,9 +2068,10 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
+		background-color: transparent;
 	}
 
-		.image[data-position] img {
+		.image[data-position] img {			
 			-moz-object-fit: cover;
 			-webkit-object-fit: cover;
 			-ms-object-fit: cover;
@@ -2200,7 +2216,7 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			height: 20.5em;
+			height: 22.65em;
 			border-radius: 0;
 		}
 
@@ -2255,7 +2271,9 @@ input, select, textarea {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: flex;
+		display: flex;		
+		justify-content: center;
+		align-items: center;
 		cursor: default;
 		list-style: none;
 		margin-left: -1.125em;
@@ -2957,11 +2975,11 @@ input, select, textarea {
 			}
 
 				.image.left img, .image.right img {
-					width: 100%;
+					width: 50%;
 				}
 
 			.image.main {
-				height: 20em;
+				height: 10em;
 			}
 
 		/* Header */
@@ -3126,6 +3144,9 @@ input, select, textarea {
 
 			h3 {
 				font-size: 1.5em;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 			}
 
 			h4 {
@@ -3154,10 +3175,16 @@ input, select, textarea {
 
 			header.major h2 {
 				font-size: 2.5em;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 			}
 
 				header.major h2 + p {
 					font-size: 1.5em;
+					display: flex;
+					justify-content: center;
+					align-items: center;
 				}
 
 		/* Features */
@@ -3166,12 +3193,12 @@ input, select, textarea {
 				display: block;
 				margin: 0 0 2.25em 0;
 				padding-right: 0;
-				width: 100%;
+				width: 50%;
 			}
 
 			.features article .inner {
 				display: block;
-				width: 100%;
+				width: 50%;
 			}
 
 		/* Header */
