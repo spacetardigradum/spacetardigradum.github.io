@@ -1,49 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 620" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560">
 	<defs>
-		<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#172b20"/><stop offset="1" stop-color="#0d1712"/></linearGradient>
-		<linearGradient id="hill" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#223b2b"/><stop offset="1" stop-color="#101d15"/></linearGradient>
-		<linearGradient id="cabin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#40563a"/><stop offset="1" stop-color="#1d3024"/></linearGradient>
-		<radialGradient id="lantern"><stop stop-color="#ffe5a1" stop-opacity=".95"/><stop offset=".18" stop-color="#f6c86d" stop-opacity=".4"/><stop offset="1" stop-color="#efb956" stop-opacity="0"/></radialGradient>
-		<linearGradient id="mist" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#a4c99a" stop-opacity="0"/><stop offset=".52" stop-color="#a4c99a" stop-opacity=".12"/><stop offset="1" stop-color="#a4c99a" stop-opacity="0"/></linearGradient>
+		<linearGradient id="forest" x1="0" y1="0" x2="0.9" y2="1"><stop stop-color="#294b32"/><stop offset=".58" stop-color="#1b3926"/><stop offset="1" stop-color="#102319"/></linearGradient>
+		<radialGradient id="glow"><stop stop-color="#f1d98b" stop-opacity=".56"/><stop offset=".42" stop-color="#b1c96f" stop-opacity=".17"/><stop offset="1" stop-color="#9dc06b" stop-opacity="0"/></radialGradient>
+		<linearGradient id="wood" x1="0" y1="0" x2="0.9" y2="1"><stop stop-color="#786342"/><stop offset="1" stop-color="#3d4930"/></linearGradient>
+		<linearGradient id="roof" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#8a9d59"/><stop offset=".45" stop-color="#526d42"/><stop offset="1" stop-color="#304a35"/></linearGradient>
+		<filter id="soft-glow" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="20"/></filter>
 	</defs>
-	<path fill="url(#sky)" d="M0 0h1600v620H0z"/>
-	<circle cx="1304" cy="104" r="56" fill="#d5dfab" fill-opacity=".1"/>
-	<circle cx="1304" cy="104" r="34" fill="#e3e5bc" fill-opacity=".5"/>
-	<path fill="#e3e5bc" fill-opacity=".36" d="M1178 63h4v12h-4zm73-49h3v8h-3zm155 63h3v9h-3zM1430 142h4v4h-4zM1093 125h3v4h-3z"/>
-	<path fill="#17281d" d="m0 370 137-104 93 72 167-135 131 117 132-144 165 157 123-107 136 113 145-146 144 126 127-84v285H0z"/>
-	<path fill="url(#hill)" d="M0 430c169-96 294-46 441-83s248-113 419-50 260 51 387-12 231-34 353 9v326H0z"/>
-	<path fill="#102016" d="M0 482c173-75 298-55 431-26 152 34 246 23 383-32 162-64 248-27 375 2 139 32 262-65 411-30v224H0z"/>
-	<path fill="url(#mist)" d="M0 435c276-35 415 57 661 20s493-26 939 6v74c-339-37-581-30-828 7S298 514 0 548z"/>
-	<!-- distant firs -->
-	<g fill="#13251a" opacity=".94">
-		<path d="m77 457 52-176 53 176h-26l42 62H59l42-62zm250 13 42-147 43 147h-21l36 52h-115l36-52zm1110-18 51-178 53 178h-26l40 59h-132l40-59zm99 22 40-139 42 139h-20l34 49h-111l35-49z"/>
-		<path d="m553 452 38-129 38 129h-18l31 45h-102l31-45zm643 5 41-145 42 145h-20l34 50h-111l34-50z" opacity=".75"/>
+	<rect width="1000" height="560" fill="url(#forest)"/>
+	<circle cx="752" cy="108" r="36" fill="#e4e6bd" fill-opacity=".72"/>
+	<circle cx="752" cy="108" r="58" fill="#c7d597" fill-opacity=".12"/>
+	<g fill="#d9e6af" opacity=".76"><circle cx="112" cy="94" r="2"/><circle cx="206" cy="143" r="2"/><circle cx="357" cy="77" r="2"/><circle cx="870" cy="171" r="2"/><circle cx="904" cy="86" r="2"/><path d="m266 178 3 9 9 3-9 3-3 9-3-9-9-3 9-3zm566-99 2 7 7 2-7 2-2 7-2-7-7-2 7-2z"/></g>
+	<!-- forested ridges -->
+	<path fill="#1a3523" d="m0 324 96-155 77 112 95-168 110 205 98-132 122 173 93-157 94 111 107-177 108 171v153H0z"/>
+	<path fill="#24442b" d="M0 380c123-74 211-44 321-88 111-45 208-28 301 22 126 67 219-36 378-28v274H0z"/>
+	<ellipse cx="510" cy="367" rx="293" ry="184" fill="url(#glow)" filter="url(#soft-glow)"/>
+	<!-- framing trees -->
+	<g fill="#12291b">
+		<path d="m28 466 58-211 60 211h-30l48 71H10l48-71zm126 13 40-147 42 147h-21l33 49h-106l34-49zm631-8 45-164 46 164h-23l36 54h-117l36-54zm131 2 60-216 61 216h-30l48 71H869l48-71z"/>
+		<path d="m234 485 49-177 50 177h-25l39 57H220l38-57zm562 4 37-132 38 132h-19l30 45h-96l29-45z" opacity=".78"/>
 	</g>
-	<!-- cabin glow -->
-	<ellipse cx="1045" cy="411" rx="240" ry="176" fill="url(#lantern)" fill-opacity=".5"/>
-	<!-- oracle's hut -->
-	<path fill="#18271c" d="m844 365 193-173 191 173-27 21-2 156H873l-3-156z"/>
-	<path fill="#263c2a" d="m868 354 169-151 168 151-29 21H894z"/>
-	<path fill="#4a5735" d="m841 361 196-180 195 180-23 23-172-158-174 158z"/>
-	<path fill="#5b6840" d="m863 361 174-159 173 159-20 18-153-139-154 139z" opacity=".55"/>
-	<path fill="url(#cabin)" d="M893 374h240v168H893z"/>
-	<path stroke="#718251" stroke-opacity=".46" stroke-width="4" d="M893 393h240M906 408v118m214-118v118"/>
-	<path fill="#0d1712" d="M997 447a42 42 0 0 1 84 0v95h-84z"/>
-	<path fill="#dfbc70" d="M1011 454a28 28 0 0 1 56 0v41h-56z"/>
-	<path fill="#f8dda0" fill-opacity=".68" d="M1018 458a21 21 0 0 1 42 0v31h-42z"/>
-	<path stroke="#c2aa69" stroke-width="4" d="M1039 426v67m-28-34h56"/>
-	<path fill="#d4c38d" d="m915 417 21-21 21 21v44h-42zm153 0 21-21 21 21v44h-42z"/>
-	<path fill="#f3d88e" d="m922 422 14-14 14 14v31h-28zm153 0 14-14 14 14v31h-28z"/>
-	<path fill="#89905b" d="M884 542h259v13H884z"/>
-	<path stroke="#657448" stroke-width="5" d="m918 551-17 25m80-25-12 25m123-25 17 25m-56-25 9 25"/>
-	<!-- winding path -->
-	<path fill="#9d9865" fill-opacity=".18" d="M1038 553c-39 19-76 32-89 67-17 44 15 66 40 101H703c59-51 78-89 71-127-5-26-33-45-68-61z"/>
-	<path stroke="#c6bd88" stroke-opacity=".2" stroke-width="3" d="M1038 561c-34 25-48 50-34 78s34 44 45 82"/>
-	<!-- foreground branches -->
-	<g fill="#0b1710">
-		<path d="m0 620 91-320 89 320H0zm96 0 97-241 94 241H96zm1164 0 96-324 96 324h-192zm128 0 77-257 83 257z"/>
-		<path d="m342 620 64-194 69 194H342zm868 0 64-185 69 185h-133z" opacity=".9"/>
+	<!-- witchy cottage silhouette -->
+	<path fill="#1b2a1d" d="m319 297 188-170 194 170-31 22v157H351V319z"/>
+	<path fill="url(#roof)" stroke="#b4c682" stroke-opacity=".54" stroke-width="5" stroke-linejoin="round" d="M294 302 505 112l218 190-22 26-196-166-189 166z"/>
+	<!-- crooked roof cap and chimney -->
+	<path fill="#3e5e3d" stroke="#b4c682" stroke-opacity=".6" stroke-width="4" d="m485 130 21-79 22 79-22-12z"/>
+	<path fill="#716847" stroke="#b4c682" stroke-opacity=".42" stroke-width="3" d="M641 180h34v79h-34z"/>
+	<path fill="#8d8057" d="M634 175h48v12h-48z"/>
+	<path fill="none" stroke="#d1dc9e" stroke-opacity=".42" stroke-width="4" stroke-linecap="round" d="M656 168c-18-18 18-24 0-42m4-5c-8-13 13-17 2-28"/>
+	<!-- timber walls -->
+	<path fill="url(#wood)" stroke="#bac58c" stroke-opacity=".62" stroke-width="4" d="M355 302h300v174H355z"/>
+	<path stroke="#c6bd8a" stroke-opacity=".38" stroke-width="5" d="M358 331h294M358 361h294M358 391h294M358 421h294M358 451h294"/>
+	<!-- arched glowing windows -->
+	<g fill="#263a2b" stroke="#ced99b" stroke-width="4">
+		<path d="M389 348a33 33 0 0 1 66 0v63h-66zm198 0a33 33 0 0 1 66 0v63h-66z"/>
 	</g>
-	<path fill="#c3c58b" fill-opacity=".7" d="m1260 308 4 12 12 4-12 4-4 12-4-12-12-4 12-4zm-603 63 3 8 8 3-8 3-3 8-3-8-8-3 8-3zm720-15 2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/>
-	<path fill="#14241a" fill-opacity=".18" d="M0 0h1600v620H0z"/>
+	<g fill="#f0d587" fill-opacity=".86"><path d="M397 350a25 25 0 0 1 50 0v54h-50z"/><path d="M595 350a25 25 0 0 1 50 0v54h-50z"/></g>
+	<g stroke="#627345" stroke-width="4"><path d="M422 328v83m-33-42h66m165-41v83m-33-42h66"/></g>
+	<!-- arched door with oracle's eye -->
+	<path fill="#17271c" stroke="#c2c98e" stroke-width="4" d="M478 476v-77a36 36 0 0 1 72 0v77z"/>
+	<path fill="#a8c77c" fill-opacity=".84" d="M493 415c12-18 31-18 43 0-12 18-31 18-43 0Z"/>
+	<circle cx="514.5" cy="415" r="7" fill="#243a2a"/>
+	<circle cx="514.5" cy="415" r="2.5" fill="#f2dc96"/>
+	<circle cx="536" cy="447" r="3" fill="#edcf87"/>
+	<path fill="#87945a" d="M341 471h329l18 17H321z"/>
+	<path fill="#b3a878" fill-opacity=".4" d="M511 487c-32 20-66 37-85 73h167c-14-38-49-57-82-73Z"/>
+	<path fill="#13271a" d="M0 495c147-50 238-26 340-1 125 31 200 24 316-18 117-42 223 21 344-14v98H0z"/>
+	<!-- nearby herbs and oracle-green lights -->
+	<g stroke="#8eb878" stroke-width="4" stroke-linecap="round"><path d="M172 500v-45m0 23-17-17m17 29 18-18m641 29v-49m0 25-17-17m17 30 18-18m94 15v-39m0 20-14-14m14 24 15-15"/></g>
+	<g fill="#a8d77f"><ellipse cx="155" cy="461" rx="9" ry="5" transform="rotate(36 155 461)"/><ellipse cx="189" cy="490" rx="9" ry="5" transform="rotate(-42 189 490)"/><ellipse cx="796" cy="460" rx="9" ry="5" transform="rotate(35 796 460)"/><ellipse cx="831" cy="493" rx="9" ry="5" transform="rotate(-42 831 493)"/></g>
+	<g fill="#d6e899"><circle cx="294" cy="444" r="3"/><circle cx="715" cy="430" r="3"/><circle cx="751" cy="468" r="2.5"/><circle cx="251" cy="474" r="2.5"/></g>
 </svg>
