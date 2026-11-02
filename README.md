@@ -5,6 +5,7 @@ A lightweight static website for private one-to-one consulting conversations. Th
 - Session length: 60 minutes
 - Price: USD 50
 - Contact: pekeott@gmail.com
-- Public site: https://spacetardigradum.github.io/
+- Public site: https://spacetardigradum.github.io/wizardshut/
+- Pages project path: `wizardshut/` in the user-site repository.
 
 The site has no runtime data APIs or third-party JavaScript dependencies.
