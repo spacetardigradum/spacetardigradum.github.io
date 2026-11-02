@@ -1,196 +1,117 @@
-<!DOCTYPE HTML>
-<html>
+<!doctype html>
+<html lang="en">
 	<head>
-		<title>Personal Profile</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#0b1715" />
+		<meta name="description" content="A map of our shared planet with a few global indicators." />
+		<title>World Atlas — Our Planet in Numbers</title>
+		<link rel="stylesheet" href="site.css" />
+		<script defer src="https://cdn.jsdelivr.net/npm/d3-geo@3.1.1/dist/d3-geo.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+		<script defer src="site.js"></script>
 	</head>
-	<body class="is-preload">
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/profile_picture.jpg" alt="" /></span>
-					<h1 id="logo" style="margin-bottom: 5px;"><a href="#">Pedro GM</a></h1>								
-					<a href="./files/final_PedroGM_CV_en.pdf" download="CV_PedroGM_en" class="fas fa-download" target="_blank"></a>
-					<a href="./files/final_PedroGM_CV_en.pdf" download="CV_PedroGM_en" style="font-size: small;" target="_blank">Download Resume</a>					
-					<p>Software Engineer<br />
-					Web Developer</p>
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#two">Skills</a></li>
-						<li><a href="#three">Projects</a></li>
-						<li><a href="#four">Contact</a></li>
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">						
-						<li><a href="https://www.linkedin.com/in/pedro-gutierrez-moncayo-6aab04156" class="icon brands fa-linkedin" target="_blank">
-								<span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/pedrogm" class="icon brands fa-github" target="_blank">
-								<span class="label">Github</span></a></li>						
-					</ul>
-				</footer>
+	<body>
+		<header class="topbar">
+			<a class="brand" href="/" aria-label="World Atlas home">
+				<svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+					<circle cx="20" cy="20" r="16" />
+					<path d="M4.8 20h30.4M20 4c4.4 4.4 6.6 9.7 6.6 16S24.4 31.6 20 36M20 4c-4.4 4.4-6.6 9.7-6.6 16S15.6 31.6 20 36M8 10.4c3.2 2.2 7.2 3.4 12 3.4s8.8-1.2 12-3.4M8 29.6c3.2-2.2 7.2-3.4 12-3.4s8.8 1.2 12 3.4" />
+				</svg>
+				<span class="brand-type"><strong>WORLD ATLAS</strong><small>GLOBAL SNAPSHOT / 01</small></span>
+			</a>
+			<div class="topbar-status"><span class="status-dot"></span> ANNUAL DATA · GLOBAL VIEW</div>
+		</header>
+
+		<main>
+			<section class="intro">
+				<div>
+					<p class="eyebrow">ONE PLANET · SHARED BY ALL</p>
+					<h1>Our world,<br /><em>in one view.</em></h1>
+					<p class="intro-copy">Explore the people and places that make up our changing planet.</p>
+				</div>
+				<div class="intro-aside">
+					<span class="aside-index">01 — 04</span>
+					<p>Country boundaries are simplified for a clear global view. Population and development figures use each source’s latest available annual data.</p>
+				</div>
 			</section>
-		<!-- Wrapper -->
-			<div id="wrapper">
-				<!-- Main -->
-					<div id="main">
-						<!-- One -->
-							<section id="one">
-								
-								<div class="image main" data-position="center">								
-									<img src="images/initial_picture.JPG" alt="image loading ..." />
-								</div>																	
-								<div class="container" >
-									<header class="major" style="margin-left: 0%;">
-										<h3>About Me</h3>
-									</header>																	
-									<div class="features">
-										<article>
-											<a href="#" class="image"><img src="images/programmer3.jpg" alt="" /></a>
-											<div class="inner" style="margin-left: 1%;">												
-												<p>
-													I am a curious Software Engineer that likes technology and software. After testing the waters in the academic world working as a developer for a research group at UMA, 
-													I am now exploring the company world and other technologies. Initially working on small Java and Python projects, I dived into Web Development
-													discovering a taste for it. Currently developing fullstack Web apps using React and Django.
-												</p>
-											</div>
-										</article>																				
-									</div>
-								</div>
-							</section>
-						<!-- Two -->
-							<section id="two">
-								<div class="container">
-									<h3>Skills</h3>
-									<p>Main technologies and tools that I´ve worked with</p>
-									<i class="fa-solid fa-computer-classic"></i>									
-									<ul class="feature-icons">
-										<li class="icon brands fa-js">Javascript - Css - HTML</li>											
-										<li class="icon brands fa-python">Python - Flask - FastAPI</li>										
-										<li class="icon brands fa-node-js">Node.js - Express.js</li>																										
-										<li class="icon solid fa-database">MongoDB - Compass</li>										
-										<li class="icon brands fa-git">Git - Bash - Docker</li>																				
-									</ul>																		
-									<p>Technologies that I´m currently working on to improve</p>
-									<ul class="feature-icons">										
-										<li class="icon brands fa-react">React.js - Next.js</li>										
-										<li class="icon brands fa-angular">Angular.js</li>			
-									</ul>
-								</div>
-							</section>
-						<!-- Three -->
-							<section id="three">
-								<div class="container">
-									<h3>Projects</h3>
-								
-									<h4>Professional</h4>
-									<p>Professional projects in which I was working during my time on the Khaos Research Group at UMA</p>
-									<hr>
-									<div class="features">
-										<article>
-											<a href="#" class="image"><img src="images/titan.png" alt="" /></a>
-											<div class="inner">
-												<h4>Titan Platform</h4>
-												<p>Worflow framework developed to test and execute different
-													purpose component workflows. I was developing on the UI, mainly
-												using Vanilla Js, Jquery, and various libraries such as flowchart.js or axios.
-												This was my first medium sized project, in wich I learned the fundamentals and got most 
-												of the Js practice.</p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/enbic.png" alt="" /></a>
-											<div class="inner">
-												<h4>Enbic2Lab</h4>
-												<p>Platform created for the purpose of the management of worflows created on the Titan platform.
-													In this project, I was working on a Python (FastAPI) API responsible for the functioning of the platform,
-													 including operations related to a MongoDB database, learning the basics about API development.
-													 I also did some brief work on the React.js FrontEnd, making a first touch with the framework.
-												</p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/tesseract.png" alt="" /></a>
-											<div class="inner">
-												<h4>Tesseract</h4>
-												<p>Virtual research environment that encapsulates Titan platform, by allowing to explore,
-													design and create workflows. In this project I was a colaborator dealing with fixes and adding features
-													on a Front End designed with Angular.js.
-												</p>
-											</div>
-										</article>
-									</div>
-									<hr>
-									<h4>Personal Projects</h4>
-									<p>Projects developed on my own, from basics to deeper Js and React, while exploring different ideas.</p>
-									<hr>									
-									<div class="features">
-										<article>
-											<a href="https://musical-griffin-eddf0a.netlify.app/" class="image"><img src="images/Wordle.png" alt="" /></a>
-											<div class="inner">
-												<h4>Wordle app</h4>
-												<p>Spanish Replica of the famous wordle game.</p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/Recipe_app.png" alt="" /></a>
-											<div class="inner">
-												<h4>Recippe app</h4>
-												<p>Simple app to search and add favourite Recepies.</p>
-											</div>
-										</article>										
-										<article>
-											<a href="#" class="image"><img src="images/quiz.png" alt="" /></a>
-											<div class="inner">
-												<h4>Questionnaire</h4>
-												<p>Daily Interactive questionnaire to solve and share the results.</p>
-											</div>
-										</article>																		
-									</div>									
-								</div>
-							</section>
-						<!-- Four -->
-							<section id="four">
-								<div class="container">
-									<h3>Contact Me</h3>
-									<p >You can get in touch with me through LinkedIn, or send me a message: </p>
-									<form method="post" action="#">
-										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
-											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" class="primary" value="Send Message" /></li>
-													<li><input type="reset" value="Reset Form" /></li>
-												</ul>
-											</div>
-										</div>
-									</form>
-								</div>
-							</section>
+
+			<section class="map-section" aria-labelledby="map-title">
+				<div class="section-heading">
+					<div>
+						<p class="eyebrow">THE BIG PICTURE</p>
+						<h2 id="map-title">A world of countries</h2>
 					</div>
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved.</li>
-							</ul>
-						</div>
-					</section>
+					<p id="map-status" class="map-status" role="status" aria-live="polite">Loading map and global data…</p>
+				</div>
+				<div class="map-frame">
+					<svg id="world-map" class="world-map" viewBox="0 0 1200 560" role="group" aria-label="Interactive world map. Focus or hover over a country to see its latest population estimate."></svg>
+					<div class="map-overlay" aria-hidden="true">
+						<span>90°N</span><span>0°</span><span>90°S</span>
+					</div>
+					<div class="map-legend" aria-label="Map color scale">
+						<span>LOWER POPULATION</span>
+						<span class="legend-ramp"></span>
+						<span>HIGHER</span>
+					</div>
+				</div>
+				<div class="country-panel" aria-live="polite">
+					<div class="country-label">COUNTRY PROFILE</div>
+					<strong id="country-name">Explore the map</strong>
+					<div class="country-facts">
+						<span id="country-region">Hover or focus a country</span>
+						<span><b id="country-population">—</b><small>POPULATION</small></span>
+						<span><b id="country-data-year">—</b><small>DATA YEAR</small></span>
+					</div>
+				</div>
+				<p class="map-caption">Population shading is logarithmic so smaller countries remain visible.</p>
+			</section>
+
+			<section class="stats-section" aria-labelledby="stats-title">
+				<div class="section-heading stats-heading">
+					<div>
+						<p class="eyebrow">A FEW SHARED NUMBERS</p>
+						<h2 id="stats-title">The planet, by the numbers</h2>
+					</div>
+					<p id="data-status" class="data-status" role="status" aria-live="polite">Waiting for data…</p>
+				</div>
+				<div class="stat-grid">
+					<article class="stat-card stat-card-featured">
+						<span class="stat-kicker">01 / PEOPLE</span>
+						<h3>World population</h3>
+						<p class="stat-value" id="stat-population">—</p>
+						<p class="stat-meta" id="stat-population-year">Latest annual estimate</p>
+					</article>
+					<article class="stat-card">
+						<span class="stat-kicker">02 / LAND</span>
+						<h3>Land area</h3>
+						<p class="stat-value" id="stat-land">—</p>
+						<p class="stat-meta" id="stat-land-year">Square kilometres</p>
+					</article>
+					<article class="stat-card">
+						<span class="stat-kicker">03 / WELLBEING</span>
+						<h3>Life expectancy</h3>
+						<p class="stat-value" id="stat-life">—</p>
+						<p class="stat-meta" id="stat-life-year">At birth, years</p>
+					</article>
+					<article class="stat-card">
+						<span class="stat-kicker">04 / MAP</span>
+						<h3>Places mapped</h3>
+						<p class="stat-value" id="stat-countries">—</p>
+						<p class="stat-meta">Countries and territories</p>
+					</article>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<span>WORLD ATLAS <span class="footer-dot">/</span> A GLOBAL SNAPSHOT</span>
+			<div class="sources">
+				<span>SOURCES</span>
+				<a href="https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation" target="_blank" rel="noreferrer">World Bank</a>
+				<a href="https://countries.dev/docs/api/countries" target="_blank" rel="noreferrer">Country reference data</a>
+				<a href="https://github.com/topojson/world-atlas" target="_blank" rel="noreferrer">Natural Earth map</a>
 			</div>
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		</footer>
 	</body>
 </html>
